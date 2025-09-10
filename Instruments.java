@@ -3,7 +3,7 @@ public class Instruments {
     private String name1, name2, name3, name4, name5;
     private double price1, price2, price3, price4, price5;
 
-    //constructor
+    //Default constructor
     public Instruments() {
         name1 = "Guitar";
         price1 = 1500000;
@@ -19,6 +19,27 @@ public class Instruments {
 
         name5 = "Flute";
         price5 = 1200000;
+    }
+    //Constructor parameter 
+    public Instruments(String n, double p) {
+        name1 = n;
+        price1 = p;
+    }
+    
+    //Getter
+    public String getName1() {
+        return name1;
+    }
+
+    public double getPrice1() {
+        return price1;
+    }
+    //Setter
+    public void setName1(String n) {
+        name1 = n;
+    }
+    public void setPrice1(double p) {
+        price1 = p;
     }
 
     public void display() {
